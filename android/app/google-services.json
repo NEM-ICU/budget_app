@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "415681166117",
+    "project_id": "fir-77fcd",
+    "storage_bucket": "fir-77fcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415681166117:android:bb5d12caf07e9f5247b8cc",
+        "android_client_info": {
+          "package_name": "com.example.expenze_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB150Ofe-7Y_kjmnI_CuFbBHEzVRvkxxDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

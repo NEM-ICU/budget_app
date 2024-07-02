@@ -1,12 +1,17 @@
 import 'package:expenze_manager/service/store_userdata.dart';
 import 'package:expenze_manager/widgets/wrapper.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding
       .ensureInitialized(); //bind the shared preferences to flutter application
-  await SharedPreferences.getInstance(); //create a instance
+  await SharedPreferences.getInstance();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ); //create a instance
   runApp(const MyApp());
 }
 
@@ -33,7 +38,6 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               fontFamily: "Poppins",
             ),
-            
             home: Wrapper(isUserNameHas: userNameData),
           );
         }
